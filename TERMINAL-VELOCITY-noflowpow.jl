@@ -118,7 +118,7 @@ function main()
     end
 
     output_data = hcat(par_size, f_vel)
-    writedlm("particle_velocity-noflowpow.dat", output_data, ',')
+    writedlm("terminal_velocity-noflowpow.dat", output_data, ',')
     default(fontfamily = "serif-roman")
     plot(par_size, f_vel,
         st=:line, 
@@ -134,7 +134,7 @@ function main()
         framestyle=:box,
         grid=false,
         )
-    savefig("terminalvel-noflowpow-2.png")
+    savefig("terminalvel-noflowpow.png")
 end
 
 main()
